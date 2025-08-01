@@ -2,7 +2,7 @@ import './assets/css/main.css';
 import React from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Accueil from './Accueil.jsx';
-import InscriptionForm from './Inscription.jsx';
+import InscriptionForm from './inscription.jsx';
 import 'swiper/swiper-bundle.css';
 import 'glightbox/dist/css/glightbox.css';
 
