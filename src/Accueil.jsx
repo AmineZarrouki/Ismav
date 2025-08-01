@@ -306,7 +306,7 @@ const Accueil = () => {
                 <ul className="mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-5">
                   <li>
                     <a
-                      href="javascript:void(0)"
+                      href="/inscription"
                       className="inline-flex items-center justify-center rounded-md bg-primary-color text-primary px-5 py-3 text-center text-base font-medium shadow-md hover:bg-primary-light-5 md:px-7 md:py-[14px]"
                       role="button"
                     >
