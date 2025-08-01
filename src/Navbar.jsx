@@ -1,6 +1,33 @@
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Assuming you are using react-router-dom
 
 const Navbar = () => {
+  // 1. Use React's state to manage the current theme. Default to 'light'.
+  const [theme, setTheme] = useState("light");
+
+  // 2. Use useEffect to run side-effects (interacting with the browser).
+  // This first effect runs only once when the component mounts.
+  useEffect(() => {
+    // Check localStorage for a previously saved theme.
+    const savedTheme = localStorage.getItem("Inazuma_WebTheme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+  }, []); // The empty dependency array [] ensures this runs only on mount.
+
+  // This second effect runs whenever the `theme` state changes.
+  useEffect(() => {
+    // Apply the theme to the <html> element.
+    document.documentElement.setAttribute("data-web-theme", theme);
+    // Save the new theme preference to localStorage.
+    localStorage.setItem("Inazuma_WebTheme", theme);
+  }, [theme]); // Re-runs whenever the `theme` variable changes.
+
+  // 3. Handler function to toggle the theme state.
+  const handleThemeToggle = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <header
       className="ic-navbar fixed left-0 top-0 z-50 flex w-full items-center bg-white shadow-md"
@@ -9,7 +36,6 @@ const Navbar = () => {
     >
       <div className="container">
         <div className="ic-navbar-container relative flex items-center justify-between px-5">
-          
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="." className="ic-navbar-logo block py-2 text-primary-color">
@@ -83,12 +109,20 @@ const Navbar = () => {
 
             {/* Buttons */}
             <div className="flex items-center justify-end pr-[52px] lg:pr-0">
+              {/* 4. The theme button now uses React's onClick event */}
               <button
                 type="button"
                 className="inline-flex items-center text-primary-color text-[24px]/none"
                 aria-label="Switch theme"
-                data-web-trigger="web-theme"
-              />
+                onClick={handleThemeToggle}
+              >
+                {/* 5. The icon changes based on the theme state */}
+                {theme === "light" ? (
+                  <i className="lni lni-night"></i>
+                ) : (
+                  <i className="lni lni-sun"></i>
+                )}
+              </button>
               <div className="hidden sm:flex">
                 <a
                   href="#"

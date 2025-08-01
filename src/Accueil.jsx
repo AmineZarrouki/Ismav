@@ -313,28 +313,12 @@ const Accueil = () => {
                       Inscription
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="javascript:void(0)"
-                      className="video-popup flex items-center gap-4 rounded-md bg-primary-color/[0.15] px-5 py-3 text-base font-medium text-primary-color hover:bg-primary-color hover:text-primary md:px-7 md:py-[14px]"
-                      role="button"
-                    >
-                      <i className="lni lni-play text-lg/none" /> Regardez l'Intro
-                    </a>
-                  </li>
                 </ul>
                
               </div>
             </div>
             <div className="w-full px-5">
               <div className="scroll-revealed relative z-10 mx-auto max-w-[845px]">
-                <figure className="mt-16">
-                  <img
-                    src=""
-                    alt="Hero"
-                    className="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
-                  />
-                </figure>
                 <div className="absolute -left-9 bottom-0 z-[-1]">
                   <img src="./assets/img/dots.svg" alt="" className="w-[120px] opacity-75" />
                 </div>
