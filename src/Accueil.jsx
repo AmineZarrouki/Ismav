@@ -310,7 +310,7 @@ const Accueil = () => {
                       className="inline-flex items-center justify-center rounded-md bg-primary-color text-primary px-5 py-3 text-center text-base font-medium shadow-md hover:bg-primary-light-5 md:px-7 md:py-[14px]"
                       role="button"
                     >
-                      Get Started
+                      Inscription
                     </a>
                   </li>
                   <li>
@@ -319,7 +319,7 @@ const Accueil = () => {
                       className="video-popup flex items-center gap-4 rounded-md bg-primary-color/[0.15] px-5 py-3 text-base font-medium text-primary-color hover:bg-primary-color hover:text-primary md:px-7 md:py-[14px]"
                       role="button"
                     >
-                      <i className="lni lni-play text-lg/none" /> Watch Intro
+                      <i className="lni lni-play text-lg/none" /> Regardez l'Intro
                     </a>
                   </li>
                 </ul>
@@ -429,101 +429,24 @@ Faites de votre passion un métier, et de l’ISM@V votre tremplin vers l’aven
       </section>
      
 
-      {/* Services section */}
-       {/* <section id="services" className="section-area">
-        <div className="container">
-          <div className="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
-            <h6 className="mb-2 block text-lg font-semibold text-primary">Les formations </h6>
-            <h2 className="mb-6">Les formations diplômantes</h2>
-            <p>ISMAV propose des formations professionnelles diplômantes en infographie, développement multimédia, animation 2D/3D et design graphique. Nos programmes sont conçus pour allier créativité et compétences techniques, avec une approche 100 % pratique, adaptée aux exigences du marché du travail.</p>
-          </div>
-          <div className="row">
-            <div className="scroll-revealed col-12 sm:col-6 lg:col-4">
-              <div className="group hover:-translate-y-1">
-                <div className="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
-                  <i className="lni lni-capsule" />
-                </div>
-                <div className="w-full">
-                  <a href="https://ibb.co/h1BYkBxK">
-                    <img src="https://i.ibb.co/S7tf2tDK/Whats-App-Image-2025-07-23-at-22-49-05.jpg" alt="Whats-App-Image-2025-07-23-at-22-49-05" border="0" />
-                  </a> 
-                  <h4 className="text-[1.25rem]/tight font-semibold mb-5"> INFOGRAPHIE</h4>
-                  <p>La formation en infographie à ISMAV permet aux étudiants de maîtriser les bases du design graphique, de la retouche d’image et de la création visuelle. Grâce à l’apprentissage de logiciels professionnels comme Photoshop et Illustrator, ils réalisent des supports de communication modernes, adaptés au web et à l’impression.
-
-</p>
-                </div>
-              </div>
-            </div>
-           
-            <div className="scroll-revealed col-12 sm:col-6 lg:col-4">
-              <div className="group hover:-translate-y-1">
-               
-              </div>
-            </div>
-            <div className="scroll-revealed col-12 sm:col-6 lg:col-4">
-              <div className="group hover:-translate-y-1">
-                <div className="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
-                  <i className="lni lni-layout" />
-                </div>
-                <div className="w-full">
-                  <h4 className="text-[1.25rem]/tight font-semibold mb-5">Multipurpose Template</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolores autem quidem odit beatae perspiciatis! Rem.</p>
-                </div>
-              </div>
-            </div>
-            <div className="scroll-revealed col-12 sm:col-6 lg:col-4">
-              <div className="group hover:-translate-y-1">
-                <div className="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
-                  <i className="lni lni-layers" />
-                </div>
-                <div className="w-full">
-                  <h4 className="text-[1.25rem]/tight font-semibold mb-5">Fully Customizable</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolores autem quidem odit beatae perspiciatis! Rem.</p>
-                </div>
-              </div>
-            </div>
-            <div className="scroll-revealed col-12 sm:col-6 lg:col-4">
-              <div className="group hover:-translate-y-1">
-                <div className="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
-                  <i className="lni lni-grid-alt" />
-                </div>
-                <div className="w-full">
-                  <h4 className="text-[1.25rem]/tight font-semibold mb-5">All Essential Elements</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolores autem quidem odit beatae perspiciatis! Rem.</p>
-                </div>
-              </div>
-            </div>
+      <section id="intro" className="section-area">
+      <div className="container">
+        <div className="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 className="mb-2 block text-lg font-semibold text-primary">Vidéo d’introduction</h6>
+          <h2 className="mb-6">Regardez notre vidéo d’introduction</h2>
+        </div>
+        <div className="scroll-revealed relative max-w-[900px] mx-auto">
+          <div className="aspect-video">
+            <video
+              src={require("./vid.mp4")}
+              alt="Vidéo d'introduction"
+              className="w-full h-full rounded-xl"
+              controls={true}
+            />
           </div>
         </div>
-      </section>*/}
-
-      {/* Intro video section */}
-<section id="intro" className="section-area">
-  <div className="container">
-    <div className="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
-      <h6 className="mb-2 block text-lg font-semibold text-primary">Vidéo d’introduction</h6>
-      <h2 className="mb-6">Regardez notre vidéo d’introduction</h2>
-      <p>
-        Il existe de nombreuses versions de passages de Lorem Ipsum, mais la majorité ont été modifiées d’une manière ou d’une autre.
-      </p>
-    </div>
-    <div className="scroll-revealed relative max-w-[900px] mx-auto">
-      <img
-        src="https://i.ibb.co/svBkgnvw/Whats-App-Image-2025-07-23-at-22-48-56.jpg"
-        alt="Vidéo d’introduction"
-        className="w-full h-full aspect-video rounded-xl object-cover"
-      />
-      <a
-        href=""
-        target="_blank"
-        rel="noopener noreferrer"
-        className="video-popup w-[80px] h-[80px] rounded-full inline-flex items-center justify-center bg-primary text-primary-color text-[1.875rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-md hover:bg-primary-color hover:text-primary hover:shadow-xl focus:bg-primary-color focus:text-primary focus:shadow-xl"
-      >
-        <i className="lni lni-play" />
-      </a>
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
       {/* Formations section */}
       <section id="formations" className="section-area">
